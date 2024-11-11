@@ -29,3 +29,4 @@ thedataset
 __init__.py
 last_inverted_cropped.png
 saved_models
+__pycache__
