@@ -1,32 +1,46 @@
+# Ignore raw EMNIST data files
 *.ubyte
 *.csv
 *.txt
-emnist-balanced-test-images-idx3-ubyte
-emnist-balanced-test-labels-idx1-ubyte
-emnist-balanced-train-images-idx3-ubyte
-emnist-balanced-train-labels-idx1-ubyte
-emnist-byclass-test-images-idx3-ubyte
-emnist-byclass-test-labels-idx1-ubyte
-emnist-byclass-train-images-idx3-ubyte
-emnist-byclass-train-labels-idx1-ubyte
-emnist-bymerge-test-images-idx3-ubyte
-emnist-bymerge-test-labels-idx1-ubyte
-emnist-bymerge-train-images-idx3-ubyte
-emnist-bymerge-train-labels-idx1-ubyte
-emnist-digits-test-images-idx3-ubyte
-emnist-digits-test-labels-idx1-ubyte
-emnist-digits-train-images-idx3-ubyte
-emnist-digits-train-labels-idx1-ubyte
-emnist-letters-test-images-idx3-ubyte
-emnist-letters-test-labels-idx1-ubyte
-emnist-letters-train-images-idx3-ubyte
-emnist-letters-train-labels-idx1-ubyte
-emnist-mnist-test-images-idx3-ubyte
-emnist-mnist-test-labels-idx1-ubyte
-emnist-mnist-train-images-idx3-ubyte
-emnist-mnist-train-labels-idx1-ubyte
-thedataset
-__init__.py
-last_inverted_cropped.png
-saved_models
-__pycache__
+
+# Ignore raw EMNIST archives (if present)
+*.zip
+*.tar.gz
+
+# Ignore custom or external datasets
+thedataset/
+saved_models/
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environments
+venv/
+.env/
+.envrc
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore VSCode configs (if you use it)
+.vscode/
+
+# Ignore compiled Python or notebook outputs
+*.so
+*.egg-info
+dist/
+build/
+
+
+# Ignore dataset and data folders
+extended_emnist/
+thedataset/
+final_dataset/
+data/

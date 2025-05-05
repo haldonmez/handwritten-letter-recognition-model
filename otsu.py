@@ -2,11 +2,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 import math
 from torch import nn
+import torch
 
 def findGreatestThreshold(img):
+  img_tensor = torch.tensor(img).float()
   # First we flatten the image to get the 1D matrix.
   flatten_image = nn.Flatten()
-  image_flattened = flatten_image(img)
+  image_flattened = flatten_image(img_tensor)
 
   # Then we get the axial values of the image.
   counts, binominal_values= np.histogram(image_flattened, bins=6)
